@@ -4,11 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-<<<<<<< Updated upstream
   productGUID: 36176f16ee2ea01498ab0a811205aa5e
-=======
-  productGUID: a3b95af3c95408b48af80d22066aafe9
->>>>>>> Stashed changes
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -706,17 +702,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-<<<<<<< Updated upstream
   cloudProjectId: 02f73e44-6819-4a18-bcfe-6f1969a95598
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Scavenger 2024-03-29_14-57-31
-=======
-  cloudProjectId: bbf06847-e17a-4341-be92-a5381f699e1a
-  framebufferDepthMemorylessMode: 0
-  qualitySettingsNames: []
-  projectName: Scavenger 2024-03-29_22-45-34
->>>>>>> Stashed changes
   organizationId: marshmar
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
