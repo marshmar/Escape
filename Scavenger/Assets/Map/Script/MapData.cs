@@ -48,8 +48,6 @@ public class MapData : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log(tr.position);
-        Debug.Log(tr.localPosition);
-        informationPanelObject.GetComponent<InformationPanel>().SetTextPanel(tr.localPosition, OccupationGroup, isFighting);
+        informationPanelObject.GetComponent<InformationPanel>().SetTextPanel(tr.position, OccupationGroup, isFighting);
     }
 }

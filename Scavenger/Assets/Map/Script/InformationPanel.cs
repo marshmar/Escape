@@ -21,10 +21,15 @@ public class InformationPanel : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// TextPanel의 값을 설정하는 함수
+    /// </summary>
+    /// <param name="mapPos">Panel을 옮길 위치</param>
+    /// <param name="OccupationGroup">점령 세력을 나타낼 세력</param>
+    /// <param name="isFighting">전쟁 중인지 여부</param>
     public void SetTextPanel(Vector3 mapPos, GROUP OccupationGroup, bool isFighting)
     {
-        Debug.Log(tr.anchoredPosition);
-        tr.anchoredPosition = new Vector3(mapPos.x, mapPos.y, mapPos.z);
+        tr.anchoredPosition = Camera.main.WorldToScreenPoint(mapPos);
         Debug.Log(tr.anchoredPosition);
         OccupationGroupText.text = OccupationGroup.ToString();
         IsFightingText.text = isFighting == true ? "True" : "False";
