@@ -13,6 +13,7 @@ public class InformationPanel : MonoBehaviour
     void Start()
     {
         tr = GetComponent<RectTransform>();
+        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,9 +31,7 @@ public class InformationPanel : MonoBehaviour
     public void SetTextPanel(Vector3 mapPos, GROUP OccupationGroup, bool isFighting)
     {
         tr.anchoredPosition = Camera.main.WorldToScreenPoint(mapPos);
-        Debug.Log(tr.anchoredPosition);
         OccupationGroupText.text = OccupationGroup.ToString();
         IsFightingText.text = isFighting == true ? "True" : "False";
     }
-    
 }

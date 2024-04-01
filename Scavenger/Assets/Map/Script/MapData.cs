@@ -19,7 +19,7 @@ public class MapData : MonoBehaviour
     GROUP occupationGroup;
 
     Transform tr;
-    GameObject informationPanelObject;
+    public GameObject informationPanelObject;
 
     // 전쟁 진행중 여부
     bool isFighting;
@@ -37,7 +37,6 @@ public class MapData : MonoBehaviour
         tr = GetComponent<Transform>();
         occupationGroup = GROUP.GROUP_BLUE;
         isFighting = false;
-        informationPanelObject = GameObject.Find("InformationPanel");
     }
 
     // Update is called once per frame
@@ -48,6 +47,7 @@ public class MapData : MonoBehaviour
 
     private void OnMouseDown()
     {
+        informationPanelObject.gameObject.SetActive(true);
         informationPanelObject.GetComponent<InformationPanel>().SetTextPanel(tr.position, OccupationGroup, isFighting);
     }
 }
